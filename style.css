@@ -125,7 +125,7 @@ h4{
     align-items:center;
     justify-content: center;
 }
-flexitem{
+.flexitem{
     display: flex;
     align-items: center;
 }
@@ -135,7 +135,30 @@ flexitem{
     gap: 1em;
 }
 
+.main-links a:hover{
+    color: var(--secondary-color)
+}
 
+.second-links a:hover{
+    color: var(--light-text-color)
+}
+
+.icon-small, .icon-large{
+    display: flex;
+    align-items: center;
+    padding: 0 0.25em;
+    font-weight: normal;
+}
+
+.icon-small{
+font-size: 1.25em;
+margin: auto;
+}
+
+.icon-large{
+font-size: 1.75em;
+padding: 0 0.75em 0 0;
+}
 /* -----------------------
   * Structure Styling
 
@@ -183,10 +206,38 @@ flexitem{
 /* 
  01. Header
 */
+header li > a{
+    display: flex;
+    position: relative;
+    line-height: inherit;
+}
 
-/* 
+/* 01. HEADER,,,,,,,,,,,,,,,,,.
 * a.Header top
 */
+
+.header-top .wrapper{
+    font-size: var(--font-small);
+    font-weight: var(--fw3);
+    justify-content: space-between;
+    line-height: 42px;
+}
+
+.header-top .wrapper ul{
+    gap: 2em;
+}
+
+.header-top li {
+    position:relative;
+}
+
+/*
+ b. Header Nav
+*/
+
+/*
+ c. Header Main, Departments Category
+ */
 
 @media screen and (min-width: 992px) {
     .container{
