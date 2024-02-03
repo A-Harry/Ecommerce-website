@@ -54,7 +54,7 @@ body{
 a{
     text-decoration: none;
     color: inherit;
-    -webkiit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 ul{
@@ -229,6 +229,14 @@ header li > a{
 
 .header-top li {
     position:relative;
+}
+
+.header-top ul ul{
+    position: absolute;
+    left: -1em;
+    line-height: 2em;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
 }
 
 /*
