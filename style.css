@@ -28,7 +28,7 @@ Fonts:
     --fw7: 700;
     --fw8: 800;
 
-    --trans-background-color: .3s, color .3s;
+    --trans-background-color: background-color .3s, color .3s;
     --trans-background: background-color .3s;
     --trans-color: color .3s;
 }
@@ -210,6 +210,7 @@ header li > a{
     display: flex;
     position: relative;
     line-height: inherit;
+    transition: var(--trans-color);
 }
 
 /* 01. HEADER,,,,,,,,,,,,,,,,,.
@@ -237,8 +238,21 @@ header li > a{
     line-height: 2em;
     background-color: var(--white-color);
     border: 1px solid var(--border-color);
+    z-index: 1;
+    display: none;
 }
 
+.header-top .right ul ul li a{
+    padding: 0.25em 1em;
+}
+
+.header-top .right ul ul li.current a{
+    background-color: var(--border-color);
+}
+
+.header-top li:hover ul{
+    display:block
+}
 /*
  b. Header Nav
 */
@@ -247,6 +261,7 @@ header li > a{
  c. Header Main, Departments Category
  */
 
+ /************** RESPONSIVE **************/
 @media screen and (min-width: 992px) {
     .container{
         padding: 0 2em;
