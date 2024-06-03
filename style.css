@@ -256,15 +256,33 @@ header li > a{
 /*
  b. Header Nav
 */
+.trigger{
+    font-size: 1.5em;
+    display:flex;
+    padding: 0.25em;
+    margin-right: 0.5em;
+}
 
 /*
  c. Header Main, Departments Category
+ */
+
+ /* 
+ d. search form
+ */
+
+ /* 
+ e. respnsive menu - off canvas
  */
 
  /************** RESPONSIVE **************/
 @media screen and (min-width: 992px) {
     .container{
         padding: 0 2em;
+    }
+
+    .desktop-hide {
+        display: none;
     }
 }
 
