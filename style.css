@@ -65,7 +65,7 @@ ul {
 }
 
 img {
-    max-width: var(--percent50);
+    max-width: var(--percent100);
     vertical-align: middle;
 }
 
@@ -195,15 +195,45 @@ h4 {
 
 
 
-/* .primary-button, .secondary-button, .light-button{
+.primary-button, .secondary-button, .light-button{
     font-size: var(--font-small);
     padding: 0.9em 2em;
     height: auto;
     width:fit-content;
     border-radius: 2em;
-    transform: var(--trans-background-color)
-} */
+    transition: var(--trans-background-color)
+}
 
+.primary-button{
+    background-color:var(--primary-color);
+    color: var(--white-color)
+}
+.primary-button:hover{
+    background-color: var(--dark-color);
+}
+.secondary-button{
+    background-color:var(--secondary-dark-color);
+    color: var(--white-color);
+}
+.secondary-button:hover{
+    background-color:var(--light-bg-color);
+    color: var(--secondary-dark-color)
+}
+
+.light-button{
+    background-color: var(--light-bg-color);
+}
+.light-button:hover{
+    background-color: var(--secondary-dark-color);
+    color: var(--white-color);
+}
+
+.view-all{
+    font-size: var(--font-small);
+    display: flex;
+    gap: 1em;
+    transition: var(--trans-color);
+}
 /* -----------------------
   * Structure Styling
 
@@ -445,8 +475,13 @@ nav .fly-item{
         padding: 2.5em;
         line-height: 2em;
         background-color: var(--light-bg-color);
-        box-shadow: rgb(0, 0, 0 / 20%) 0 30px 20px -30p
+        box-shadow: rgb(0, 0, 0 / 20%) 0 30px 20px -30px;
+        z-index: 100;
+        /* display:none */
     }
+/* nav li.has-child:hover .mega{
+    display: block;
+} */
 
     .mega .wrapper{
         display: flex;
